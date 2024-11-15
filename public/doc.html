@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação do Projeto</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Documentação do Projeto</h1>
+        <p>Este projeto implementa uma API RESTful utilizando Node.js, Express e a biblioteca lowDB para simular a gestão de um recurso de "Estudantes". A API permite realizar operações CRUD (Criar, Ler, Atualizar e eliminar) numa base de dados, que é armazenada em um arquivo JSON utilizando lowDB.</p>
+        <ul class="documentation-list">
+            
+            <h1>Funcionalidades principais:</h1>
+            <li>Gestão de Estudantes: A API permite inserir, visualizar, editar e eliminar estudantes. Cada estudante possui um identificador único (ID), nome e curso e ano de matrícula.</li>
+            <li>Persistência de Dados: A API utiliza lowDB para garantir que os dados sejam armazenados Num arquivo JSON, mantendo a persistência mesmo após reiniciar o servidor.</li>
+            
+            
+            <h1>Funcionalidades principais:</h1>
+            <li>GET /students
+                Retorna uma lista com todos os estudantes inseridos.</li>
+            <li>GET /students/{id}
+                Retorna os detalhes de um estudante específico, identificado pelo ID.</li>
+            <li>POST /students
+                Cria um novo estudante. Requer que os campos nome, curso e ano sejam fornecidos.</li>
+            <li>PUT /students/{id}
+                Atualiza os dados de um estudante específico. Requer que o ID do estudante e os campos a serem atualizados sejam fornecidos.</li>
+            <li>DELETE /students/{id}
+                Remove um estudante específico com o ID fornecido.</li>
+            
+        
+        </ul>
+    </div>
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="/about.html">Autor</a>
+</body>
+
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        .documentation-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .documentation-list li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        line-height: 1.6;
+        color: #666;
+    }
+    .documentation-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .documentation-list li {
+        background: #e2e2e2;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    /* Navegação */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        color: #007acc;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #007acc;
+        color: #fff;
+    }
+</style>

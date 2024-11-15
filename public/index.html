@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable List</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <h2>Editable List of Students</h2>
+
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Year</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Students will be inserted here -->
+    </tbody>
+  </table>
+
+  <div class="new-item-form">
+    <h3>Create New Student</h3>
+    <input type="text" id="newName" placeholder="Name" />
+    <input type="text" id="newCourse" placeholder="Course" />
+    <input type="text" id="newYear" placeholder="Year" />
+    <button onclick="createNewStudent()">Create</button>
+  </div>
+
+  <div class="edit-item-form" style="display: none;">
+    <h3>Edit Student</h3>
+    <input type="text" id="editName" placeholder="Name" />
+    <input type="text" id="editCourse" placeholder="Course" />
+    <input type="text" id="editYear" placeholder="Year" />
+    <button onclick="updateStudent()">Update</button>
+    <button onclick="cancelEdit()">Cancel</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <nav>
+    <a href="/doc.html">Documentação</a>
+    <a href="/about.html">Autor</a>
+  </nav>
+</body>
+</html>
